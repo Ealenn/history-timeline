@@ -1,0 +1,15 @@
+[
+  {
+    "page": { "fr": "préhistoire", "en": "prehistory"},
+    "tabs": [
+      { "page": { "fr": "paléolithique", "en": "paleolithic"} },
+      { "page": { "fr": "mésolithique", "en": "mesolithic"} },
+      { "page": { "fr": "néolithique", "en": "neolithic"} }
+    ]
+  },
+  {
+    "page": { "fr": "renaissance", "en": "renaissance"},
+    "tabs": [
+    ]
+  }
+]
