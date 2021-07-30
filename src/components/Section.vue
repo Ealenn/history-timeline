@@ -2,6 +2,8 @@
 <div class="tabs-content" :id="currentSection.Id" :style="'background-image: url('+ getSectionPicture() + ');'">
   <div class="overlay">
     <div class="container">
+        <div class="date">{{ currentSection.Date }}</div>
+        <div class="subtitle">{{ currentSection.Title }}</div>
         <div class="row">
           <div class="col-md-8 mx-auto">
               <div class="content">
@@ -49,6 +51,22 @@ export default class Section extends Vue {
 <style scoped>
 .content {
   color: #fff
+}
+
+.date {
+  font-family: 'Great Vibes';
+  color: #fff;
+  font-weight: 100;
+  text-transform: none;
+  font-size: 4em;
+}
+
+.subtitle {
+  font-family: 'Great Vibes';
+  color: #fff;
+  font-weight: 100;
+  text-transform: none;
+  font-size: 3em;
 }
 
 .overlay {
