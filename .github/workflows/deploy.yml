@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ "master", "feature/auto-deploy-gh-page" ]
+    branches: [ master ]
 
 jobs:
   build:
