@@ -10,11 +10,19 @@ import * as Path from 'path';
 const contents = require('./content.json') as Content[];
 const availableLang = ['en', 'fr'];
 
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 (async () => {
   /**
    * MAPPER
    */
   async function getPage(lang: string, pageTitle: string): Promise<WikipediaPage> {
+    await sleep(1000);
+    const pageId = pageTitle.replace('_', ' ');
+    console.log(`${lang} : ${pageTitle} -- ${pageId}`);
+
     const api = wiki({
       apiUrl: `https://${lang}.wikipedia.org/w/api.php`,
       origin: null,
@@ -22,15 +30,20 @@ const availableLang = ['en', 'fr'];
         'User-Agent': 'history-timeline/0.0 (https://github.com/Ealenn/history-timeline/)'
       }
     });
-    const page = await api.page(pageTitle);
-    const Content = await page.rawContent();
 
-    return {
-      Id: page.raw.pageid,
-      Title: page.raw.title,
-      Url: page.raw.fullurl,
-      Content: Content.split('\n')[0]
-    };
+    try {
+      const page = await api.page(pageId);
+      const Content = await page.rawContent();
+      return {
+        Id: page.raw.pageid,
+        Title: page.raw.title,
+        Url: page.raw.fullurl,
+        Content: Content.split('\n')[0]
+      };
+    } catch (e) {
+      console.error(e);
+      throw e;
+    }
   }
 
   /**
@@ -57,6 +70,7 @@ const availableLang = ['en', 'fr'];
       const section: HistorySection = {
         Id: content.page['en'],
         Title: page.Title,
+        Date: content.date,
         Content: page.Content,
         Tabs: tabs
       };

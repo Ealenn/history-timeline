@@ -1,5 +1,6 @@
 export interface Content {
   page: LangString;
+  date: string;
   tabs: ContentTab[]
 }
 
