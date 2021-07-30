@@ -36,7 +36,7 @@ export default class Hero extends Vue {
 .baner-content {
   padding-top: 30vh;
   text-align: center;
-  background-image: url(/img/hero.jpg);
+  background-image: url(../assets/hero.jpg);
 }
 
 .baner-content h1 {

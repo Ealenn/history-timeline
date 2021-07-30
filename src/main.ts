@@ -11,9 +11,9 @@ import VueLazyload from 'vue-lazyload'
 import CountryFlag from 'vue-country-flag'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const loadimage = require('../public/img/loading-img.gif')
+const loadimage = require('@/assets/loading-img.gif')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const errorimage = require('../public/img/not-found.png')
+const errorimage = require('@/assets/not-found.png')
 
 Vue.component('country-flag', CountryFlag)
 Vue.use(VueLazyload, {

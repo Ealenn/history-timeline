@@ -41,7 +41,7 @@ export default class Section extends Vue {
   }
 
   getSectionPicture(id = 'hero'): string {
-    return `/img/${this.currentSection.Id}/${id}.jpg`;
+    return `img/${this.currentSection.Id}/${id}.jpg`;
   }
 }
 </script>
@@ -135,5 +135,4 @@ img {
   display:table;
   clear:both;
 }
-
 </style>
