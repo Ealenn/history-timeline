@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c737fd9ec687731889e",
-    "url": "/history-timeline/css/app.b6e0e97f.css"
+    "revision": "b26641e9eb556896ce9b",
+    "url": "/history-timeline/css/app.b0d62b8d.css"
   },
   {
     "revision": "be0f718213e782b447d2",
@@ -17,15 +17,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "660c0eb27013bc342183334027a5bd93",
-    "url": "/history-timeline/img/hero.jpg"
+    "url": "/history-timeline/img/hero.660c0eb2.jpg"
   },
   {
     "revision": "bf34611d89cb4e9e62fc4997a1d329f2",
     "url": "/history-timeline/img/loading-img.bf34611d.gif"
-  },
-  {
-    "revision": "bf34611d89cb4e9e62fc4997a1d329f2",
-    "url": "/history-timeline/img/loading-img.gif"
   },
   {
     "revision": "2299ad0b3f63413f026dfec20c205b8f",
@@ -34,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "31f15875975aab69085470aabbfec802",
     "url": "/history-timeline/img/next.png"
-  },
-  {
-    "revision": "d92c3b396abfd61ace753ac1ada50522",
-    "url": "/history-timeline/img/not-found.png"
   },
   {
     "revision": "e96ce807e9c829e975d881e907975769",
@@ -52,12 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/history-timeline/img/renaissance/hero.jpg"
   },
   {
-    "revision": "24b73e9944a2261462e68a8865e9ac96",
+    "revision": "4645e902bc03970b0a2f18b9771a533c",
     "url": "/history-timeline/index.html"
   },
   {
-    "revision": "4c737fd9ec687731889e",
-    "url": "/history-timeline/js/app.202b19d7.js"
+    "revision": "b26641e9eb556896ce9b",
+    "url": "/history-timeline/js/app.2f91d4d4.js"
   },
   {
     "revision": "be0f718213e782b447d2",
